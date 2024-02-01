@@ -1,9 +1,9 @@
 {
-  "name": "cloudflare/sdk",
-  "description": "PHP binding for v4 of the Cloudflare Client API.",
+  "name": "sirmonti/cloudflare-php",
+  "description": "Custom version of the Cloudflare PHP binding.",
   "type": "library",
   "require": {
-    "guzzlehttp/guzzle": "^7.0.1 || ^6.0.0",
+    "sirmonti/simplehttp": "@stable",
     "php": ">=7.2.5",
     "psr/http-message": "~1.0",
     "ext-json": "*"

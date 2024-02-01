@@ -1,2 +1,5 @@
-/.idea
-/vendor/
+.idea
+vendor/
+nbproject/
+.phpdoc/
+tools/
