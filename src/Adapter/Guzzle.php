@@ -16,6 +16,8 @@ class Guzzle implements Adapter
      */
     public function __construct(Auth $auth, string $baseURI = null)
     {
+        if(!class_exists('GuzzleHttp\Client'))
+            throw new Error(_('You must install guzzlehttp/guzzle'));
         if ($baseURI === null) {
             $baseURI = 'https://api.cloudflare.com/client/v4/';
         }
