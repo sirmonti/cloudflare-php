@@ -1,6 +1,6 @@
 {
   "name": "sirmonti/cloudflare-php",
-  "description": "Custom version of the Cloudflare PHP binding.",
+  "description": "Cloudflare PHP binding optimized for slim framework.",
   "type": "library",
   "require": {
     "sirmonti/simplehttp": "@stable",

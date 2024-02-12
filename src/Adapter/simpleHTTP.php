@@ -2,15 +2,15 @@
 
 namespace Cloudflare\API\Adapter;
 
-use simpleHTTP;
+use simpleHTTP as SHTTP;
 use Cloudflare\API\Auth\Auth;
 use Psr\Http\Message\ResponseInterface;
 
-class simpleHTTPAdapter implements Adapter
+class simpleHTTP implements Adapter
 {
     private string $url;
     private array $headers;
-    private simpleHTTP $http;
+    private SHTTP $http;
 
     /**
      * @inheritDoc
@@ -28,7 +28,7 @@ class simpleHTTPAdapter implements Adapter
         }
 
         $this->url=$baseURI;
-        $this->http=new simpleHTTP(1,true);
+        $this->http=new SHTTP(1,true);
         $this->http->setExtraHeaders($this->headers);
     }
 
