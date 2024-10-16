@@ -6,7 +6,7 @@ use simpleHTTP as SHTTP;
 use Cloudflare\API\Auth\Auth;
 use Psr\Http\Message\ResponseInterface;
 
-class simpleHTTP implements Adapter
+class simpleHTTPAdapter implements Adapter
 {
     private string $url;
     private array $headers;
